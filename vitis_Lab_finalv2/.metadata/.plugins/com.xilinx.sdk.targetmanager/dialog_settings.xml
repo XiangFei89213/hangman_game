@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\vitis_project\vitis_Lab_finalv2\lab_finalv2\_ide\bitstream\mcs_top_complete.bit" key="lab_finalv2-bitFile"/>
+	<item value="false" key="lab_finalv2-partial_bit"/>
+	<item value="Local" key="lab_finalv2-target"/>
+	<item value="lab_finalv2" key="programfpga.sdxproject"/>
+	<item value="Auto Detect" key="lab_finalv2-device"/>
+	<item value="false" key="lab_finalv2-skip_rev_check"/>
+	<item value="C:\vitis_project\vitis_Lab_finalv2\lab_finalv2\_ide\bitstream\mcs_top_complete.mmi" key="lab_finalv2-bmmFile"/>
+	<item value="C:\vitis_project\vitis_Lab_finalv2\lab_finalv2\Debug\lab_finalv2.elf" key="lab_finalv2-microblaze_I-initElf"/>
+</section>

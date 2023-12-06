@@ -1,0 +1,5 @@
+Nothing to build in platform 'mcs_top_complete'
+
+19:47:49 **** Incremental Build of configuration Debug for project lab_finalv2 ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,1727 @@
+
+*** Running vivado
+    with args -log mcs_top_complete.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mcs_top_complete.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mcs_top_complete.tcl -notrace
+Command: synth_design -top mcs_top_complete -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25876 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1244.242 ; gain = 227.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mcs_top_complete' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/mcs_top_complete.sv:3]
+	Parameter BRG_BASE bound to: -1073741824 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mmcm_fpro' [C:/vitis_project/project_Lab_final/project_Lab_final.runs/synth_1/.Xil/Vivado-19420-Sophia/realtime/mmcm_fpro_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm_fpro' (1#1) [C:/vitis_project/project_Lab_final/project_Lab_final.runs/synth_1/.Xil/Vivado-19420-Sophia/realtime/mmcm_fpro_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/vitis_project/project_Lab_final/project_Lab_final.runs/synth_1/.Xil/Vivado-19420-Sophia/realtime/cpu_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (2#1) [C:/vitis_project/project_Lab_final/project_Lab_final.runs/synth_1/.Xil/Vivado-19420-Sophia/realtime/cpu_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'chu_mcs_bridge' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/chu_mcs_bridge.sv:1]
+	Parameter BRG_BASE bound to: -1073741824 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'chu_mcs_bridge' (3#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/chu_mcs_bridge.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mmio_sys_sampler' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/mmio_sys_sampler.sv:4]
+	Parameter N_SW bound to: 16 - type: integer 
+	Parameter N_LED bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'chu_mmio_controller' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_mmio_controller.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_mmio_controller' (4#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_mmio_controller.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_timer' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_timer.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'chu_timer' (5#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_timer.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'chu_uart' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/chu_uart.sv:8]
+	Parameter FIFO_DEPTH_BIT bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart.sv:1]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter FIFO_W bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_gen' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/baud_gen.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'baud_gen' (6#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/baud_gen.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart_rx.sv:2]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart_rx.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (7#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart_rx.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart_tx.sv:2]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart_tx.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (8#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart_tx.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/fifo/fifo.sv:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_ctrl' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/fifo/fifo_ctrl.sv:2]
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/fifo/fifo_ctrl.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ctrl' (9#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/fifo/fifo_ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/fifo/reg_file.sv:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (10#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/fifo/reg_file.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (11#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/fifo/fifo.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (12#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/uart.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_uart' (13#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/uart/chu_uart.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'chu_gpo' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_gpo.sv:1]
+	Parameter W bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'chu_gpo' (14#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_gpo.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_gpi' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_gpi.sv:1]
+	Parameter W bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'chu_gpi' (15#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_gpi.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_xadc_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_xadc_core.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'xadc_fpro' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/xadc_fpro.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/MY_APPS/Xillinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:82113]
+	Parameter INIT_40 bound to: 16'b0000000000000000 
+	Parameter INIT_41 bound to: 16'b0010000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000001100000000 
+	Parameter INIT_49 bound to: 16'b0000110000001100 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (16#1) [C:/MY_APPS/Xillinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:82113]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_fpro' (17#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/xadc_fpro.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'chu_xadc_core' (18#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_xadc_core.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'chu_io_pwm_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_io_pwm_core.sv:15]
+	Parameter W bound to: 8 - type: integer 
+	Parameter R bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'chu_io_pwm_core' (19#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_io_pwm_core.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'chu_debounce_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_debounce_core.sv:1]
+	Parameter W bound to: 5 - type: integer 
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debounce_fsm' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/debounce_fsm.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_fsm' (20#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/debounce_fsm.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'debounce_counter' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/debounce_counter.sv:1]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce_counter' (21#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/debounce_counter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_debounce_core' (22#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_debounce_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_led_mux_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_led_mux_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux8' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/led_mux8.sv:1]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/led_mux8.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux8' (23#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/led_mux8.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_led_mux_core' (24#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_led_mux_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_spi_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_spi_core.sv:1]
+	Parameter S bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'spi' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/spi.sv:33]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/spi.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'spi' (25#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/spi.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'chu_spi_core' (26#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_spi_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_i2c_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_i2c_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'i2c_master' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/i2c_master.sv:30]
+	Parameter START_CMD bound to: 3'b000 
+	Parameter WR_CMD bound to: 3'b001 
+	Parameter RD_CMD bound to: 3'b010 
+	Parameter STOP_CMD bound to: 3'b011 
+	Parameter RESTART_CMD bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master' (27#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/i2c_master.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'chu_i2c_core' (28#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_i2c_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_ps2_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_ps2_core.sv:1]
+	Parameter W_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ps2_top' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ps2_top.sv:1]
+	Parameter W_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ps2tx' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ps2tx.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ps2tx' (29#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ps2tx.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ps2rx' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ps2rx.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ps2rx' (30#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ps2rx.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_top' (31#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ps2_top.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_ps2_core' (32#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_ps2_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_ddfs_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_ddfs_core.sv:1]
+	Parameter PW bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ddfs' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ddfs.sv:1]
+	Parameter PW bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sin_rom.sv:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'sin_table.mem' is read successfully [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sin_rom.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (33#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sin_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ddfs' (34#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ddfs.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ds_1bit_dac' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ds_1bit_dac.sv:1]
+	Parameter W bound to: 16 - type: integer 
+	Parameter BIAS bound to: 32768 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ds_1bit_dac' (35#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ds_1bit_dac.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_ddfs_core' (36#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_ddfs_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_adsr_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_adsr_core.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'adsr' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/adsr.sv:19]
+	Parameter MAX bound to: -2147483648 - type: integer 
+	Parameter BYPASS bound to: -1 - type: integer 
+	Parameter ZERO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adsr' (37#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/adsr.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'chu_adsr_core' (38#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_adsr_core.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'mmio_sys_sampler' (39#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/mmio_sys_sampler.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'video_sys_daisy' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/video_sys_daisy.sv:20]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter VRAM_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'frame_counter' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_counter.sv:1]
+	Parameter HMAX bound to: 640 - type: integer 
+	Parameter VMAX bound to: 480 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frame_counter' (40#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_video_controller' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_video_controller.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_video_controller' (41#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_video_controller.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_frame_buffer_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_frame_buffer_core.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter DW bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'frame_src' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_src.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter DW bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vga_ram' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ram320K.sv:8]
+	Parameter DW bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sync_rw_port_ram' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sync_rw_port_ram.sv:2]
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_rw_port_ram' (42#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sync_rw_port_ram.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'sync_rw_port_ram__parameterized0' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sync_rw_port_ram.sv:2]
+	Parameter ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_rw_port_ram__parameterized0' (42#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sync_rw_port_ram.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'vga_ram' (43#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ram320K.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'frame_palette_9' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_palette.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'frame_palette_9' (44#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_palette.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'frame_src' (45#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_src.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_frame_buffer_core' (46#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_frame_buffer_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_vga_bar_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_bar_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'bar_src' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/bar_src.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'bar_src' (47#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/bar_src.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_vga_bar_core' (48#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_bar_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_rgb2gray_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_rgb2gray_core .sv:1]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/rgb2gray.sv:6]
+	Parameter RW bound to: 8'b00110101 
+	Parameter GW bound to: 8'b10111000 
+	Parameter BW bound to: 8'b00010010 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray' (49#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/rgb2gray.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'chu_rgb2gray_core' (50#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_rgb2gray_core .sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_vga_hangman_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/chu_vag_hangman_core.sv:13]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hangman_src' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/hangman_src.sv:7]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter ADDR bound to: 13 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+	Parameter H_SIZE bound to: 32 - type: integer 
+	Parameter V_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hangman_ram_lut' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/hangman_ram.sv:7]
+	Parameter ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'hangman_bitmap.mem' is read successfully [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/hangman_ram.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'hangman_ram_lut' (51#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/hangman_ram.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'hangman_src' (52#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/hangman_src.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'chu_vga_hangman_core' (53#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/chu_vag_hangman_core.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'chu_vga_dummy_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_dummy_core.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'chu_vga_dummy_core' (54#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_dummy_core.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'chu_vga_sprite_ghost_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_sprite_ghost_core.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ghost_src' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ghost_src.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter ADDR bound to: 10 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+	Parameter H_SIZE bound to: 16 - type: integer 
+	Parameter V_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ghost_ram_lut' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ghost_ram.sv:1]
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'ghost_bitmap.mem' is read successfully [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ghost_ram.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'ghost_ram_lut' (55#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ghost_ram.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ghost_src' (56#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ghost_src.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_vga_sprite_ghost_core' (57#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_sprite_ghost_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_vga_osd_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_osd_core.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'osd_src' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/osd_src.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+	Parameter NULL_CHAR bound to: 7'b0000000 
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/font_rom.sv:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'font.mem' is read successfully [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/font_rom.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (58#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/font_rom.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sync_rw_port_ram__parameterized1' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sync_rw_port_ram.sv:2]
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_rw_port_ram__parameterized1' (58#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/sync_rw_port_ram.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'osd_src' (59#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/osd_src.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_vga_osd_core' (60#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_osd_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_vga_sprite_mouse_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_sprite_mouse_core.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mouse_src' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/mouse_src.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter ADDR bound to: 10 - type: integer 
+	Parameter KEY_COLOR bound to: 0 - type: integer 
+	Parameter H_SIZE bound to: 32 - type: integer 
+	Parameter V_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mouse_ram_lut' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/moue_ram.sv:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'mouse_pointer.mem' is read successfully [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/moue_ram.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'mouse_ram_lut' (61#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/moue_ram.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mouse_src' (62#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/mouse_src.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'chu_vga_sprite_mouse_core' (63#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_sprite_mouse_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'chu_vga_sync_core' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_sync_core.sv:1]
+	Parameter CD bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'line_buffer' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/line_buffer.sv:11]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter DW bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bram_fifo_fpro' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/bram_fifo_fpro.sv:44]
+	Parameter DW bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO_DUALCLOCK_MACRO' [C:/MY_APPS/Xillinx/Vivado/2019.2/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.v:25]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 9'b010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 9'b010000000 
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter FIFO_SIZE bound to: 18Kb - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: TRUE - type: string 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter DATA_P bound to: FALSE - type: string 
+	Parameter d_size bound to: 18 - type: integer 
+	Parameter D_WIDTH bound to: 16 - type: integer 
+	Parameter DIP_WIDTH bound to: 0 - type: integer 
+	Parameter DOP_WIDTH bound to: 1 - type: integer 
+	Parameter COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter MAX_D_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_DP_WIDTH bound to: 4 - type: integer 
+	Parameter MAX_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter fin_width bound to: 13 - type: integer 
+	Parameter sim_device_pm bound to: 7SERIES - type: string 
+INFO: [Synth 8-6157] synthesizing module 'FIFO18E1' [C:/MY_APPS/Xillinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14111]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 9'b010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 9'b010000000 
+	Parameter DATA_WIDTH bound to: 18 - type: integer 
+	Parameter DO_REG bound to: 1 - type: integer 
+	Parameter EN_SYN bound to: FALSE - type: string 
+	Parameter FIFO_MODE bound to: FIFO18 - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: TRUE - type: string 
+	Parameter INIT bound to: 36'b000000000000000000000000000000000000 
+	Parameter IS_RDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RDEN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREG_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter IS_WRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_WREN_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL bound to: 36'b000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO18E1' (64#1) [C:/MY_APPS/Xillinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14111]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_DUALCLOCK_MACRO' (65#1) [C:/MY_APPS/Xillinx/Vivado/2019.2/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'bram_fifo_fpro' (66#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/bram_fifo_fpro.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'line_buffer' (67#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/line_buffer.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/vga_sync.sv:8]
+	Parameter CD bound to: 12 - type: integer 
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HT bound to: 800 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VT bound to: 525 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'frame_counter__parameterized0' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_counter.sv:1]
+	Parameter HMAX bound to: 800 - type: integer 
+	Parameter VMAX bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frame_counter__parameterized0' (67#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/frame_counter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (68#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/vga_sync.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'chu_vga_sync_core' (69#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/chu_vga_sync_core.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'video_sys_daisy' (70#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/video_sys_daisy.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'mcs_top_complete' (71#1) [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/new/mcs_top_complete.sv:3]
+WARNING: [Synth 8-3917] design mcs_top_complete has port audio_on driven by constant 1
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[10] driven by constant 0
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[9] driven by constant 0
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[8] driven by constant 0
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[7] driven by constant 0
+WARNING: [Synth 8-3331] design vga_sync has unconnected port vga_si_valid
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port cs
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port write
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[13]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[12]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[11]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[10]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[9]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[8]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[7]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[6]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[5]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[4]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[3]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[2]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[1]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port addr[0]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[31]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[30]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[29]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[28]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[27]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[26]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[25]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[24]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[23]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[22]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[21]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[20]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[19]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[18]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[17]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[16]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[15]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[14]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[13]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[12]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[11]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[10]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[9]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[8]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[7]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[6]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[5]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[4]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[3]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[2]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[1]
+WARNING: [Synth 8-3331] design chu_vga_sync_core has unconnected port wr_data[0]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port addr[12]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port addr[11]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port addr[10]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[31]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[30]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[29]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[28]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[27]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[26]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[25]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[24]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[23]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[22]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[21]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[20]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[19]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[18]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[17]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[16]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[15]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[14]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[13]
+WARNING: [Synth 8-3331] design chu_vga_sprite_mouse_core has unconnected port wr_data[12]
+WARNING: [Synth 8-3331] design osd_src has unconnected port x[10]
+WARNING: [Synth 8-3331] design osd_src has unconnected port y[10]
+WARNING: [Synth 8-3331] design osd_src has unconnected port y[9]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port addr[12]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[31]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[30]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[29]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[28]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[27]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[26]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[25]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[24]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[23]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[22]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[21]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[20]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[19]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[18]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[17]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[16]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[15]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[14]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[13]
+WARNING: [Synth 8-3331] design chu_vga_osd_core has unconnected port wr_data[12]
+WARNING: [Synth 8-3331] design chu_vga_sprite_ghost_core has unconnected port addr[12]
+WARNING: [Synth 8-3331] design chu_vga_sprite_ghost_core has unconnected port addr[11]
+WARNING: [Synth 8-3331] design chu_vga_sprite_ghost_core has unconnected port addr[10]
+WARNING: [Synth 8-3331] design chu_vga_sprite_ghost_core has unconnected port wr_data[31]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1363.863 ; gain = 347.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1363.863 ; gain = 347.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1363.863 ; gain = 347.207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1363.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/ip/mmcm_fpro/mmcm_fpro/mmcm_fpro_in_context.xdc] for cell 'clk_mmcm_unit'
+Finished Parsing XDC File [c:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/ip/mmcm_fpro/mmcm_fpro/mmcm_fpro_in_context.xdc] for cell 'clk_mmcm_unit'
+Parsing XDC File [c:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/ip/cpu_1/cpu/cpu_in_context.xdc] for cell 'cpu_unit'
+Finished Parsing XDC File [c:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/ip/cpu_1/cpu/cpu_in_context.xdc] for cell 'cpu_unit'
+Parsing XDC File [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sd_reset'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'sd_sclk'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'sd_mosi'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'sd_miso'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'sd_ss_n'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'jb_top[1]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:237]
+WARNING: [Vivado 12-584] No ports matched 'jb_top[2]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:238]
+WARNING: [Vivado 12-584] No ports matched 'jb_top[3]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'jb_top[4]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'jb_btm[7]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'jb_btm[8]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'jb_btm[9]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'jb_btm[10]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:244]
+WARNING: [Vivado 12-584] No ports matched 'jc_top[1]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'jc_top[2]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'jc_top[3]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:253]
+WARNING: [Vivado 12-584] No ports matched 'jc_top[4]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:254]
+WARNING: [Vivado 12-584] No ports matched 'jc_btm[7]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'jc_btm[8]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:256]
+WARNING: [Vivado 12-584] No ports matched 'jc_btm[9]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:257]
+WARNING: [Vivado 12-584] No ports matched 'jc_btm[10]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:258]
+WARNING: [Vivado 12-584] No ports matched 'jd_top[1]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:266]
+WARNING: [Vivado 12-584] No ports matched 'jd_top[2]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:267]
+WARNING: [Vivado 12-584] No ports matched 'jd_top[3]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:268]
+WARNING: [Vivado 12-584] No ports matched 'jd_top[4]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:269]
+WARNING: [Vivado 12-584] No ports matched 'jd_btm[7]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:270]
+WARNING: [Vivado 12-584] No ports matched 'jd_btm[8]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:271]
+WARNING: [Vivado 12-584] No ports matched 'jd_btm[9]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:272]
+WARNING: [Vivado 12-584] No ports matched 'jd_btm[10]'. [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc:273]
+Finished Parsing XDC File [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mcs_top_complete_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/constrs_1/imports/M15 to M18 - Complete System/Nexys4_DDR_chu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mcs_top_complete_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mcs_top_complete_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1458.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1458.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1458.520 ; gain = 441.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1458.520 ; gain = 441.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/ip/mmcm_fpro/mmcm_fpro/mmcm_fpro_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/ip/mmcm_fpro/mmcm_fpro/mmcm_fpro_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for clk_mmcm_unit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu_unit. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1458.520 ; gain = 441.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'debounce_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'spi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'i2c_master'
+INFO: [Synth 8-5545] ROM "ready_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_phase" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "scl_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2tx'
+INFO: [Synth 8-5545] ROM "state_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'adsr'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'vga_sync'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 | 00000000000000000000000000000000
+                   start |                               01 | 00000000000000000000000000000001
+                    data |                               10 | 00000000000000000000000000000010
+                    stop |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 | 00000000000000000000000000000000
+                   start |                               01 | 00000000000000000000000000000001
+                    data |                               10 | 00000000000000000000000000000010
+                    stop |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                              000 | 00000000000000000000000000000000
+                 wait1_1 |                              001 | 00000000000000000000000000000001
+                 wait1_2 |                              010 | 00000000000000000000000000000010
+                 wait1_3 |                              011 | 00000000000000000000000000000011
+                     one |                              100 | 00000000000000000000000000000100
+                 wait0_1 |                              101 | 00000000000000000000000000000101
+                 wait0_2 |                              110 | 00000000000000000000000000000110
+                 wait0_3 |                              111 | 00000000000000000000000000000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'debounce_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 | 00000000000000000000000000000000
+              cpha_delay |                               01 | 00000000000000000000000000000001
+                      p0 |                               10 | 00000000000000000000000000000010
+                      p1 |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'spi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 | 00000000000000000000000000000000
+                  start1 |                             0001 | 00000000000000000000000000000010
+                  start2 |                             0010 | 00000000000000000000000000000011
+                    hold |                             0011 | 00000000000000000000000000000001
+                 restart |                             0100 | 00000000000000000000000000001001
+                   stop1 |                             0101 | 00000000000000000000000000001010
+                  iSTATE |                             0110 | 00000000000000000000000000001011
+*
+                   data1 |                             0111 | 00000000000000000000000000000100
+                   data2 |                             1000 | 00000000000000000000000000000101
+                   data3 |                             1001 | 00000000000000000000000000000110
+                   data4 |                             1010 | 00000000000000000000000000000111
+                data_end |                             1011 | 00000000000000000000000000001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'i2c_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                           000001 | 00000000000000000000000000000000
+                   waitr |                           000010 | 00000000000000000000000000000001
+                     rts |                           000100 | 00000000000000000000000000000010
+                   start |                           001000 | 00000000000000000000000000000011
+                    data |                           010000 | 00000000000000000000000000000100
+                  iSTATE |                           100000 | 00000000000000000000000000000101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 | 00000000000000000000000000000000
+                     dps |                              010 | 00000000000000000000000000000001
+                  iSTATE |                              100 | 00000000000000000000000000000010
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                           000001 | 00000000000000000000000000000000
+                  launch |                           000010 | 00000000000000000000000000000001
+                  attack |                           000100 | 00000000000000000000000000000010
+                   decay |                           001000 | 00000000000000000000000000000011
+                 sustain |                           010000 | 00000000000000000000000000000100
+                  iSTATE |                           100000 | 00000000000000000000000000000101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'adsr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              frame_sync |                                0 | 00000000000000000000000000000000
+                  iSTATE |                                1 | 00000000000000000000000000000001
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'vga_sync'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1458.520 ; gain = 441.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     30 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 12    
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 10    
+	               30 Bit    Registers := 5     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 13    
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 10    
+	               11 Bit    Registers := 23    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 16    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 27    
++---RAMs : 
+	            2304K Bit         RAMs := 1     
+	             576K Bit         RAMs := 1     
+	              32K Bit         RAMs := 1     
+	              16K Bit         RAMs := 1     
+	              12K Bit         RAMs := 1     
+	               2K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	  12 Input     16 Bit        Muxes := 1     
+	   6 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 15    
+	   7 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 9     
+	  12 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 34    
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 49    
+	   3 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 34    
+	   8 Input      1 Bit        Muxes := 5     
+	  12 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module chu_mmio_controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module chu_timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module baud_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+Module fifo_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 6     
+Module chu_uart 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+Module chu_gpo 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module chu_gpi 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module chu_xadc_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 6     
+Module chu_io_pwm_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 8     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module debounce_fsm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module chu_debounce_core 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module led_mux8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module chu_led_mux_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module spi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 5     
+Module chu_spi_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module i2c_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	  12 Input     16 Bit        Muxes := 1     
+	  12 Input      9 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 9     
+Module chu_i2c_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module ps2tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     13 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 8     
+Module ps2rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module sin_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ddfs 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     30 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 2     
+Module ds_1bit_dac 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+Module chu_ddfs_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               30 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+Module adsr 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 3     
+Module chu_adsr_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+Module frame_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module chu_video_controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sync_rw_port_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---RAMs : 
+	            2304K Bit         RAMs := 1     
+Module sync_rw_port_ram__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---RAMs : 
+	             576K Bit         RAMs := 1     
+Module vga_ram 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module frame_src 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     19 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+Module chu_frame_buffer_core 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module bar_src 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      4 Bit        Muxes := 3     
+Module chu_vga_bar_core 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module chu_rgb2gray_core 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module hangman_ram_lut 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module hangman_src 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     12 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module chu_vga_hangman_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module ghost_ram_lut 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module ghost_src 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     12 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module chu_vga_sprite_ghost_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module font_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module sync_rw_port_ram__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module osd_src 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+Module chu_vga_osd_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module mouse_ram_lut 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---RAMs : 
+	              12K Bit         RAMs := 1     
+Module mouse_src 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module chu_vga_sprite_mouse_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module frame_counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module video_sys_daisy 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "i2c_unit/state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+DSP Report: Generating DSP ddfs_unit/modu, operation Mode is: A*B2.
+DSP Report: register ddfs_unit/rom_unit/data_reg_reg is absorbed into DSP ddfs_unit/modu.
+DSP Report: operator ddfs_unit/modu is absorbed into DSP ddfs_unit/modu.
+INFO: [Synth 8-4471] merging register 'video_sys_unit/v3_ghost_unit/ghost_src_unit/x_d1_reg_reg[10:0]' into 'video_sys_unit/v5_hangman_unit/hangman_src_unit/x_d1_reg_reg[10:0]' [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ghost_src.sv:89]
+WARNING: [Synth 8-3917] design mcs_top_complete has port audio_on driven by constant 1
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[10] driven by constant 0
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[9] driven by constant 0
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[8] driven by constant 0
+WARNING: [Synth 8-3917] design mcs_top_complete has port ja_btm[7] driven by constant 0
+INFO: [Synth 8-4652] Swapped enable and write-enable on 9 RAM instances of RAM video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM video_sys_unit/v5_hangman_unit/hangman_src_unit/ram_unit/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM video_sys_unit/v3_ghost_unit/ghost_src_unit/ram_unit/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM video_sys_unit/v2_osd_unit/osd_src_unit/text_ram_unit/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM video_sys_unit/v1_mouse_unit/mouse_src_unit/ram_unit/ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v5_hangman_unit/hangman_src_unit/x_d1_reg_reg[2]' (FD) to 'video_sys_unit/v2_osd_unit/osd_src_unit/x_delay1_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v5_hangman_unit/hangman_src_unit/x_d1_reg_reg[1]' (FD) to 'video_sys_unit/v2_osd_unit/osd_src_unit/x_delay1_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v5_hangman_unit/hangman_src_unit/x_d1_reg_reg[0]' (FD) to 'video_sys_unit/v2_osd_unit/osd_src_unit/x_delay1_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__36' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__18' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__0' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__7'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__35' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__17' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__7'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__37' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__19' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__1' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__7'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__41' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__23' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__5' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__7'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__42' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__24' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__6' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__7'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__43' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__40'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__25' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__40'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__7' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__4'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__38' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__40'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__20' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__40'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__2' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__4'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__39' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__40'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__21' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__40'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__3' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__4'
+INFO: [Synth 8-3886] merging instance 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__40' (FD) to 'i_0/video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[7]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/buf_unit/frame_src_unit/frame_reg_reg[3]' (FD) to 'video_sys_unit/buf_unit/frame_src_unit/frame_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/buf_unit/frame_src_unit/frame_reg_reg[8]' (FD) to 'video_sys_unit/buf_unit/frame_src_unit/frame_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/buf_unit/frame_src_unit/frame_reg_reg[4]' (FD) to 'video_sys_unit/buf_unit/frame_src_unit/frame_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[3]' (FDR) to 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[2]' (FDR) to 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[9]' (FDR) to 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[11]' (FDR) to 'video_sys_unit/v5_hangman_unit/hangman_src_unit/out_rgb_d1_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[3]' (FDR) to 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[2]' (FDR) to 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[9]' (FDR) to 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[11]' (FDR) to 'video_sys_unit/v3_ghost_unit/ghost_src_unit/out_rgb_d1_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[6]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[5]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[4]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[3]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[2]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[1]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mmio_unit/ps2_slot11/ps2_unit/ps2_rx_unit/filter_reg_reg[0]' (FDC) to 'mmio_unit/ps2_slot11/ps2_unit/ps2_tx_unit/filter_reg_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (ps2_unit/ps2_tx_unit/FSM_onehot_state_reg_reg[5]) is unused and will be removed from module chu_ps2_core.
+WARNING: [Synth 8-3332] Sequential element (ps2_unit/ps2_rx_unit/FSM_onehot_state_reg_reg[2]) is unused and will be removed from module chu_ps2_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__15) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__16) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__17) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__18) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__19) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__20) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__21) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__22) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__23) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__24) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__25) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__26) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__27) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (ddfs_unit/pcm_reg_reg__28) is unused and will be removed from module chu_ddfs_core.
+WARNING: [Synth 8-3332] Sequential element (adsr_unit/FSM_onehot_state_reg_reg[5]) is unused and will be removed from module chu_adsr_core.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__8) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__9) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__10) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__11) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__12) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__13) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__14) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__15) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__16) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__26) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__27) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__28) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__29) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__30) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__31) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__32) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__33) is unused and will be removed from module mcs_top_complete.
+WARNING: [Synth 8-3332] Sequential element (video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_mux_sel__34) is unused and will be removed from module mcs_top_complete.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 1458.520 ; gain = 441.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+----------------------------------------------------------------+---------------+----------------+
+|Module Name      | RTL Object                                                     | Depth x Width | Implemented As | 
++-----------------+----------------------------------------------------------------+---------------+----------------+
+|chu_ddfs_core    | p_0_out                                                        | 256x16        | LUT            | 
+|mcs_top_complete | video_sys_unit/v2_osd_unit/osd_src_unit/font_unit/data_reg_reg | 2048x8        | Block RAM      | 
++-----------------+----------------------------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-----------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object                                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mcs_top_complete | video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg | 256 K x 9(READ_FIRST)  | W |   | 256 K x 9(WRITE_FIRST) |   | R | Port A and B     | 0      | 72     | 
+|mcs_top_complete | video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg  | 64 K x 9(READ_FIRST)   | W |   | 64 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 0      | 18     | 
+|mcs_top_complete | video_sys_unit/v5_hangman_unit/hangman_src_unit/ram_unit/ram_reg       | 8 K x 2(READ_FIRST)    | W |   | 8 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mcs_top_complete | video_sys_unit/v3_ghost_unit/ghost_src_unit/ram_unit/ram_reg           | 1 K x 2(READ_FIRST)    | W |   | 1 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mcs_top_complete | video_sys_unit/v2_osd_unit/osd_src_unit/text_ram_unit/ram_reg          | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|mcs_top_complete | video_sys_unit/v1_mouse_unit/mouse_src_unit/ram_unit/ram_reg           | 1 K x 12(READ_FIRST)   | W |   | 1 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++-----------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++---------------------+---------------------------------------------+-----------+----------------------+--------------------------+
+|Module Name          | RTL Object                                  | Inference | Size (Depth x Width) | Primitives               | 
++---------------------+---------------------------------------------+-----------+----------------------+--------------------------+
+|mmio_unit/uart_slot1 | uart_unit/fifo_tx_unit/f_unit/array_reg_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|mmio_unit/uart_slot1 | uart_unit/fifo_rx_unit/f_unit/array_reg_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|mmio_unit/ps2_slot11 | ps2_unit/fifo_unit/f_unit/array_reg_reg     | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
++---------------------+---------------------------------------------+-----------+----------------------+--------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|chu_ddfs_core | A*B2        | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:48 . Memory (MB): peak = 1474.594 ; gain = 457.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:55 . Memory (MB): peak = 1519.180 ; gain = 502.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-----------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object                                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mcs_top_complete | video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg | 256 K x 9(READ_FIRST)  | W |   | 256 K x 9(WRITE_FIRST) |   | R | Port A and B     | 0      | 72     | 
+|mcs_top_complete | video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg  | 64 K x 9(READ_FIRST)   | W |   | 64 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 0      | 18     | 
+|mcs_top_complete | video_sys_unit/v5_hangman_unit/hangman_src_unit/ram_unit/ram_reg       | 8 K x 2(READ_FIRST)    | W |   | 8 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mcs_top_complete | video_sys_unit/v3_ghost_unit/ghost_src_unit/ram_unit/ram_reg           | 1 K x 2(READ_FIRST)    | W |   | 1 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mcs_top_complete | video_sys_unit/v2_osd_unit/osd_src_unit/text_ram_unit/ram_reg          | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|mcs_top_complete | video_sys_unit/v1_mouse_unit/mouse_src_unit/ram_unit/ram_reg           | 1 K x 12(READ_FIRST)   | W |   | 1 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++-----------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++---------------------+---------------------------------------------+-----------+----------------------+--------------------------+
+|Module Name          | RTL Object                                  | Inference | Size (Depth x Width) | Primitives               | 
++---------------------+---------------------------------------------+-----------+----------------------+--------------------------+
+|mmio_unit/uart_slot1 | uart_unit/fifo_tx_unit/f_unit/array_reg_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|mmio_unit/uart_slot1 | uart_unit/fifo_rx_unit/f_unit/array_reg_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|mmio_unit/ps2_slot11 | ps2_unit/fifo_unit/f_unit/array_reg_reg     | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
++---------------------+---------------------------------------------+-----------+----------------------+--------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/vitis_project/project_Lab_final/project_Lab_final.srcs/sources_1/imports/HDL/ddfs.sv:30]
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_5_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_256k_unit/ram_reg_7_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/buf_unit/frame_src_unit/vram_unit/ram_64k_unit/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/v5_hangman_unit/hangman_src_unit/ram_unit/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/v3_ghost_unit/ghost_src_unit/ram_unit/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/v2_osd_unit/osd_src_unit/text_ram_unit/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance video_sys_unit/v2_osd_unit/osd_src_unit/font_unit/data_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:01:01 . Memory (MB): peak = 1555.707 ; gain = 539.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop mmio_unit/i2c_slot10/i2c_unit/scl_reg_reg is being inverted and renamed to mmio_unit/i2c_slot10/i2c_unit/scl_reg_reg_inv.
+INFO: [Synth 8-6064] Net \video_sys_unit/buf_unit/frame_src_unit/vram_unit/we_64k  is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1339 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1338 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1337 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1334 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:01:11 . Memory (MB): peak = 1560.230 ; gain = 543.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:01:11 . Memory (MB): peak = 1560.230 ; gain = 543.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:01:13 . Memory (MB): peak = 1560.230 ; gain = 543.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:01:13 . Memory (MB): peak = 1560.230 ; gain = 543.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:01:13 . Memory (MB): peak = 1560.234 ; gain = 543.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:01:13 . Memory (MB): peak = 1560.234 ; gain = 543.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mmcm_fpro     |         1|
+|2     |cpu           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |cpu        |     1|
+|2     |mmcm_fpro  |     1|
+|3     |CARRY4     |   182|
+|4     |DSP48E1_1  |     1|
+|5     |FIFO18E1   |     1|
+|6     |LUT1       |    54|
+|7     |LUT2       |   485|
+|8     |LUT3       |   236|
+|9     |LUT4       |   448|
+|10    |LUT5       |   257|
+|11    |LUT6       |   427|
+|12    |MUXF7      |    34|
+|13    |MUXF8      |    12|
+|14    |RAM64M     |    24|
+|15    |RAM64X1D   |    24|
+|16    |RAMB18E1   |     1|
+|17    |RAMB18E1_1 |     1|
+|18    |RAMB18E1_3 |     1|
+|19    |RAMB18E1_4 |     1|
+|20    |RAMB36E1   |    45|
+|21    |RAMB36E1_1 |    45|
+|22    |RAMB36E1_2 |     1|
+|23    |XADC       |     1|
+|24    |FDCE       |  1203|
+|25    |FDPE       |    29|
+|26    |FDRE       |   196|
+|27    |IBUF       |    32|
+|28    |IOBUF      |     3|
+|29    |OBUF       |    66|
+|30    |OBUFT      |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------------------+---------------------------------+------+
+|      |Instance                            |Module                           |Cells |
++------+------------------------------------+---------------------------------+------+
+|1     |top                                 |                                 |  3887|
+|2     |  mmio_unit                         |mmio_sys_sampler                 |  2688|
+|3     |    adsr_slot13                     |chu_adsr_core                    |   596|
+|4     |      adsr_unit                     |adsr                             |   414|
+|5     |    ddfs_slot12                     |chu_ddfs_core                    |   443|
+|6     |      dac_unit                      |ds_1bit_dac                      |    38|
+|7     |      ddfs_unit                     |ddfs                             |   173|
+|8     |    debounce_slot7                  |chu_debounce_core                |    71|
+|9     |      db_counter_unit               |debounce_counter                 |    31|
+|10    |      \fsm_cell_gen[0].db_fsm_unit  |debounce_fsm                     |     7|
+|11    |      \fsm_cell_gen[1].db_fsm_unit  |debounce_fsm_6                   |     7|
+|12    |      \fsm_cell_gen[2].db_fsm_unit  |debounce_fsm_7                   |     7|
+|13    |      \fsm_cell_gen[3].db_fsm_unit  |debounce_fsm_8                   |     7|
+|14    |      \fsm_cell_gen[4].db_fsm_unit  |debounce_fsm_9                   |     7|
+|15    |    gpi_slot3                       |chu_gpi                          |    17|
+|16    |    gpo_slot2                       |chu_gpo                          |    17|
+|17    |    i2c_slot10                      |chu_i2c_core                     |   157|
+|18    |      i2c_unit                      |i2c_master                       |   140|
+|19    |    led_slot8                       |chu_led_mux_core                 |   122|
+|20    |      led_mux8_unit                 |led_mux8                         |    56|
+|21    |    ps2_slot11                      |chu_ps2_core                     |   219|
+|22    |      ps2_unit                      |ps2_top                          |   219|
+|23    |        fifo_unit                   |fifo_3                           |    83|
+|24    |          c_unit                    |fifo_ctrl_4                      |    54|
+|25    |          f_unit                    |reg_file_5                       |    29|
+|26    |        ps2_rx_unit                 |ps2rx                            |    42|
+|27    |        ps2_tx_unit                 |ps2tx                            |    94|
+|28    |    pwm_slot6                       |chu_io_pwm_core                  |   361|
+|29    |    spi_slot9                       |chu_spi_core                     |   111|
+|30    |      spi_unit                      |spi                              |    90|
+|31    |    timer_slot0                     |chu_timer                        |   146|
+|32    |    uart_slot1                      |chu_uart                         |   287|
+|33    |      uart_unit                     |uart                             |   275|
+|34    |        baud_gen_unit               |baud_gen                         |    33|
+|35    |        fifo_rx_unit                |fifo                             |    77|
+|36    |          c_unit                    |fifo_ctrl_1                      |    53|
+|37    |          f_unit                    |reg_file_2                       |    24|
+|38    |        fifo_tx_unit                |fifo_0                           |    78|
+|39    |          c_unit                    |fifo_ctrl                        |    51|
+|40    |          f_unit                    |reg_file                         |    27|
+|41    |        uart_rx_unit                |uart_rx                          |    40|
+|42    |        uart_tx_unit                |uart_tx                          |    47|
+|43    |    xadc_slot5                      |chu_xadc_core                    |   141|
+|44    |      xadc_unit                     |xadc_fpro                        |     4|
+|45    |  video_sys_unit                    |video_sys_daisy                  |  1010|
+|46    |    buf_unit                        |chu_frame_buffer_core            |   202|
+|47    |      frame_src_unit                |frame_src                        |   200|
+|48    |        vram_unit                   |vga_ram                          |   165|
+|49    |          ram_256k_unit             |sync_rw_port_ram                 |   124|
+|50    |          ram_64k_unit              |sync_rw_port_ram__parameterized0 |    41|
+|51    |    frame_counter_unit              |frame_counter                    |   259|
+|52    |    v0_vga_sync_unit                |chu_vga_sync_core                |    86|
+|53    |      line_unit                     |line_buffer                      |     2|
+|54    |        line_fifo_unit              |bram_fifo_fpro                   |     2|
+|55    |          bram_fifo_unit            |FIFO_DUALCLOCK_MACRO             |     2|
+|56    |      sync_unit                     |vga_sync                         |    84|
+|57    |        counter_unit                |frame_counter__parameterized0    |    69|
+|58    |    v1_mouse_unit                   |chu_vga_sprite_mouse_core        |    65|
+|59    |      mouse_src_unit                |mouse_src                        |    39|
+|60    |        ram_unit                    |mouse_ram_lut                    |    11|
+|61    |    v2_osd_unit                     |chu_vga_osd_core                 |    87|
+|62    |      osd_src_unit                  |osd_src                          |    59|
+|63    |        font_unit                   |font_rom                         |    35|
+|64    |        text_ram_unit               |sync_rw_port_ram__parameterized1 |     4|
+|65    |    v3_ghost_unit                   |chu_vga_sprite_ghost_core        |   112|
+|66    |      ghost_src_unit                |ghost_src                        |    79|
+|67    |        ram_unit                    |ghost_ram_lut                    |     2|
+|68    |    v5_hangman_unit                 |chu_vga_hangman_core             |   116|
+|69    |      hangman_src_unit              |hangman_src                      |    82|
+|70    |        ram_unit                    |hangman_ram_lut                  |     3|
+|71    |    v6_gray_unit                    |chu_rgb2gray_core                |    23|
+|72    |      rgb2gray_unit                 |rgb2gray                         |    21|
+|73    |    v7_bar_unit                     |chu_vga_bar_core                 |    56|
+|74    |      bar_src_unit                  |bar_src                          |    54|
++------+------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:01:13 . Memory (MB): peak = 1560.234 ; gain = 543.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 267 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:01:11 . Memory (MB): peak = 1560.234 ; gain = 448.922
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:01:14 . Memory (MB): peak = 1560.234 ; gain = 543.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 1568.285 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 377 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1568.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 51 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 24 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+306 Infos, 175 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:25 . Memory (MB): peak = 1568.336 ; gain = 836.176
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1568.336 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/vitis_project/project_Lab_final/project_Lab_final.runs/synth_1/mcs_top_complete.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mcs_top_complete_utilization_synth.rpt -pb mcs_top_complete_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  4 21:29:14 2023...

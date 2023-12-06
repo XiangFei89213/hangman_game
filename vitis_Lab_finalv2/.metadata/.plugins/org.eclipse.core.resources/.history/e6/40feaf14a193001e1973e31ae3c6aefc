@@ -1,0 +1,532 @@
+/*****************************************************************/ /**
+                                                                     * @file main_video_test.cpp
+                                                                     *
+                                                                     * @brief Basic test of 4 basic i/o cores
+                                                                     *
+                                                                     * @author p chu
+                                                                     * @version v1.0: initial release
+                                                                     *
+                                                                     *********************************************************************/
+
+// #define _DEBUG
+#include "chu_init.h"
+#include "gpio_cores.h"
+#include "vga_core.h"
+#include "sseg_core.h"
+#include "ddfs_core.h"
+#include "ps2_core.h"
+
+void init_writing(OsdCore *osd_p)
+{
+    // WELCOME TO HANGMAN
+    //    osd_p->wr_char(x, y, ch, reverse)
+    osd_p->set_color(0x0f0, 0x000);
+    osd_p->wr_char(20, 5, 87, 0); // 57 = W
+    osd_p->wr_char(22, 5, 69, 0); // 69 = E
+    osd_p->wr_char(24, 5, 76, 0); // L
+    osd_p->wr_char(26, 5, 67, 0); // C
+    osd_p->wr_char(28, 5, 79, 0); // O
+    osd_p->wr_char(30, 5, 77, 0); // M
+    osd_p->wr_char(32, 5, 69, 0); // E
+    osd_p->wr_char(36, 5, 84, 0); // T
+    osd_p->wr_char(38, 5, 79, 0); // O
+    osd_p->wr_char(42, 5, 72, 0); // H
+    osd_p->wr_char(44, 5, 65, 0); // A
+    osd_p->wr_char(46, 5, 78, 0); // N
+    osd_p->wr_char(48, 5, 71, 0); // G
+    osd_p->wr_char(50, 5, 77, 0); // M
+    osd_p->wr_char(52, 5, 65, 0); // A
+    osd_p->wr_char(54, 5, 78, 0); // N
+
+    // question display
+    osd_p->wr_char(20, 20, 95, 0); // _
+    osd_p->wr_char(22, 20, 95, 0); // _
+    osd_p->wr_char(24, 20, 95, 0); // _
+    osd_p->wr_char(26, 20, 95, 0); // _
+    osd_p->wr_char(28, 20, 95, 0); // _
+    osd_p->wr_char(30, 20, 95, 0); // _
+    osd_p->wr_char(32, 20, 95, 0); // _
+    osd_p->wr_char(34, 20, 95, 0); // _
+    osd_p->wr_char(36, 20, 95, 0); // _
+    osd_p->wr_char(38, 20, 95, 0); // _
+}
+
+void ans_display(OsdCore *osd_p, int i)
+{
+
+    osd_p->set_color(0x0f0, 0x000);
+    switch (i)
+    {
+    case 1:
+        osd_p->wr_char(20, 20, 77, 0); // M
+        break;
+    case 2:
+        osd_p->wr_char(22, 20, 105, 0); // i
+        break;
+    case 3:
+        osd_p->wr_char(24, 20, 99, 0); // c
+        break;
+    case 4:
+        osd_p->wr_char(26, 20, 114, 0); // r
+        break;
+    case 5:
+        osd_p->wr_char(28, 20, 111, 0); // O
+        break;
+    case 6:
+        osd_p->wr_char(30, 20, 98, 0); // b
+        break;
+    case 7:
+        osd_p->wr_char(32, 20, 108, 0); // l
+        break;
+    case 8:
+        osd_p->wr_char(34, 20, 97, 0); // a
+        break;
+    case 9:
+        osd_p->wr_char(36, 20, 122, 0); // z
+        break;
+    case 10:
+        osd_p->wr_char(38, 20, 101, 0); // e
+        break;
+
+    default:
+        break;
+    }
+}
+
+void test_start(GpoCore *led_p)
+{
+    int i;
+
+    for (i = 0; i < 20; i++)
+    {
+        led_p->write(0xff00);
+        sleep_ms(50);
+        led_p->write(0x0000);
+        sleep_ms(50);
+    }
+}
+
+/**
+ * check bar generator core
+ * @param bar_p pointer to Gpv instance
+ */
+void bar_check(GpvCore *bar_p)
+{
+    bar_p->bypass(0);
+    sleep_ms(3000);
+}
+
+/**
+ * check color-to-grayscale core
+ * @param gray_p pointer to Gpv instance
+ */
+void gray_check(GpvCore *gray_p)
+{
+    gray_p->bypass(0);
+    sleep_ms(3000);
+    gray_p->bypass(1);
+}
+
+/**
+ * check osd core
+ * @param osd_p pointer to osd instance
+ */
+void osd_check(OsdCore *osd_p)
+{
+    osd_p->set_color(0x0f0, 0x001); // dark gray/green
+    osd_p->bypass(0);
+    osd_p->clr_screen();
+    for (int i = 0; i < 64; i++)
+    {
+        osd_p->wr_char(8 + i, 20, i);
+        osd_p->wr_char(8 + i, 21, 64 + i, 1);
+        sleep_ms(100);
+    }
+    sleep_ms(3000);
+}
+
+/**
+ * test frame buffer core
+ * @param frame_p pointer to frame buffer instance
+ */
+void frame_check(FrameCore *frame_p)
+{
+    int x, y, color;
+
+    frame_p->bypass(0);
+    for (int i = 0; i < 10; i++)
+    {
+        frame_p->clr_screen(0x008); // dark green
+        for (int j = 0; j < 20; j++)
+        {
+            x = rand() % 640;
+            y = rand() % 480;
+            color = rand() % 512;
+            frame_p->plot_line(400, 200, x, y, color);
+        }
+        sleep_ms(300);
+    }
+    sleep_ms(3000);
+}
+
+/**
+ * test ghost sprite
+ * @param ghost_p pointer to mouse sprite instance
+ */
+void mouse_check(SpriteCore *mouse_p)
+{
+    int x, y;
+
+    // don't bypass = show image
+    mouse_p->bypass(0);
+
+    // clear top and bottom lines
+    for (int i = 0; i < 32; i++)
+    {
+        mouse_p->wr_mem(i, 0);
+        mouse_p->wr_mem(31 * 32 + i, 0);
+    }
+
+    // slowly move mouse pointer
+    x = 0;
+    y = 0;
+    for (int i = 0; i < 80; i++)
+    {
+        mouse_p->move_xy(x, y);
+        sleep_ms(50);
+        x = x + 4;
+        y = y + 3;
+    }
+    sleep_ms(3000);
+    // load top and bottom rows
+    for (int i = 0; i < 32; i++)
+    {
+        sleep_ms(20);
+        mouse_p->wr_mem(i, 0x00f);
+        mouse_p->wr_mem(31 * 32 + i, 0xf00);
+    }
+    sleep_ms(3000);
+}
+
+/**
+ * test ghost sprite
+ * @param ghost_p pointer to ghost sprite instance
+ */
+void ghost_check(SpriteCore *ghost_p)
+{
+    int x, y;
+
+    // slowly move mouse pointer
+    ghost_p->bypass(0);
+    ghost_p->wr_ctrl(0x1c); // animation; blue ghost
+
+    // location
+    x = 0;
+    y = 100;
+    for (int i = 0; i < 156; i++)
+    {
+        ghost_p->move_xy(x, y);
+        sleep_ms(100);
+        x = x + 4;
+        if (i == 80)
+        {
+            // change to red ghost half way
+            ghost_p->wr_ctrl(0x04);
+        }
+    }
+    sleep_ms(3000);
+}
+
+/**
+ * test hangman sprite
+ * @param ghost_p pointer to ghost sprite instance
+ */
+void hangman_check(HangmanCore *hangman_p)
+{
+
+    // slowly move mouse pointer
+    hangman_p->bypass(0);
+    hangman_p->wr_ctrl(0x16);
+    hangman_p->move_xy(320, 200);
+}
+
+void ddfs_check(DdfsCore *ddfs_p, GpoCore *led_p)
+{
+    int i, j;
+    float env;
+
+    // vol = (float)sw.read_pin()/(float)(1<<16),
+    ddfs_p->set_env_source(0); // select envelop source
+    ddfs_p->set_env(0.0);      // set volume
+    sleep_ms(500);
+    ddfs_p->set_env(1.0); // set volume
+    ddfs_p->set_carrier_freq(262);
+    sleep_ms(2000);
+    ddfs_p->set_env(0.0); // set volume
+    sleep_ms(2000);
+    // volume control (attenuation)
+    ddfs_p->set_env(0.0); // set volume
+    env = 1.0;
+    for (i = 0; i < 1000; i++)
+    {
+        ddfs_p->set_env(env);
+        sleep_ms(10);
+        env = env / 1.0109; // 1.0109**1024=2**16
+    }
+    // frequency modulation 635-912 800 - 2000 siren sound
+    ddfs_p->set_env(1.0); // set volume
+    ddfs_p->set_carrier_freq(635);
+    for (i = 0; i < 5; i++)
+    { // 10 cycles
+        for (j = 0; j < 30; j++)
+        {                                    // sweep 30 steps
+            ddfs_p->set_offset_freq(j * 10); // 10 Hz increment
+            sleep_ms(25);
+        } // end j loop
+    }     // end i loop
+    ddfs_p->set_offset_freq(0);
+    ddfs_p->set_env(0.0); // set volume
+    sleep_ms(1000);
+}
+char take_inputs(Ps2Core *ps2_p)
+{
+    int count = 1;
+    char ch;
+    char alphabet[53] = {
+        'a', 'A',
+        'b', 'B',
+        'c', 'C',
+        'd', 'D',
+        'e', 'E',
+        'f', 'F',
+        'g', 'G',
+        'h', 'H',
+        'i', 'I',
+        'j', 'J',
+        'k', 'K',
+        'l', 'L',
+        'm', 'M',
+        'n', 'N',
+        'o', 'O',
+        'p', 'P',
+        'q', 'Q',
+        'r', 'R',
+        's', 'S',
+        't', 'T',
+        'u', 'U',
+        'v', 'V',
+        'w', 'W',
+        'x', 'X',
+        'y', 'Y',
+        'z', 'Z',
+        '@'};
+    while (count == 1)
+    {
+        ps2_p->get_kb_ch(&ch);
+        for (int i = 0; i < 52; i++)
+        {
+            if (alphabet[i] == ch)
+            {
+                if (i % 2 == 1)
+                {
+                    ch = alphabet[i - 1]; // Normalize all to lowercase
+                }
+                count--;
+                break;
+            }
+        }
+    }
+    return ch;
+}
+void sound_correct(DdfsCore *ddfs_p)
+{
+    ddfs_p->set_env(1.0); // set volume
+    ddfs_p->set_carrier_freq(635);
+    ddfs_p->set_offset_freq(150);
+    sleep_ms(150);
+    ddfs_p->set_offset_freq(300);
+    sleep_ms(250);
+    ddfs_p->set_offset_freq(0);
+    ddfs_p->set_env(0.0); // set volume
+}
+void sound_incorrect(DdfsCore *ddfs_p)
+{
+    ddfs_p->set_env(1.0); // set volume
+    ddfs_p->set_carrier_freq(635);
+    ddfs_p->set_offset_freq(300);
+    sleep_ms(150);
+    ddfs_p->set_offset_freq(150);
+    sleep_ms(250);
+    ddfs_p->set_offset_freq(0);
+    ddfs_p->set_env(0.0); // set volume
+}
+void wrong_display(OsdCore *osd_p, char ch, int num)
+{
+    osd_p->set_color(0x0f0, 0x000);
+    int cur_pos = 54;
+    osd_p->wr_char(cur_pos + num, 20, ch, 0); // _
+}
+
+void wrong_writer(OsdCore *osd_p,char guess, int lives){
+    int location = 8 - lives;
+    int ascii = (int)guess;
+    ascii = ascii > 90? ascii-32: ascii;
+    osd_p->wr_char(5 + (2*location), 15, ascii, 0);
+}
+void passed(DdfsCore *ddfs_p,OsdCore *osd_p){
+    osd_p->wr_char(32, 8, (int)"Y", 0);
+    osd_p->wr_char(34, 8, (int)"O", 0);
+    osd_p->wr_char(36, 8, (int)"U", 0);
+    osd_p->wr_char(40, 8, (int)"W", 0);
+    osd_p->wr_char(42, 8, (int)"I", 0);
+    osd_p->wr_char(44, 8, (int)"N", 0);
+
+    ddfs_p->set_env(1.0); // set volume
+    ddfs_p->set_carrier_freq(125);
+    ddfs_p->set_offset_freq(300);
+    sleep_ms(150);
+    ddfs_p->set_offset_freq(335);
+    sleep_ms(250);
+    ddfs_p->set_offset_freq(635);
+    sleep_ms(250);
+    ddfs_p->set_offset_freq(0);
+    ddfs_p->set_env(0.0); // set volume
+}
+void failed(DdfsCore *ddfs_p,OsdCore *osd_p){
+    osd_p->wr_char(32, 8, (int)"Y", 0);
+    osd_p->wr_char(34, 8, (int)"O", 0);
+    osd_p->wr_char(36, 8, (int)"U", 0);
+    osd_p->wr_char(40, 8, (int)"L", 0);
+    osd_p->wr_char(42, 8, (int)"O", 0);
+    osd_p->wr_char(44, 8, (int)"S", 0);
+    osd_p->wr_char(44, 8, (int)"E", 0);
+
+    ddfs_p->set_env(1.0); // set volume
+    ddfs_p->set_carrier_freq(635);
+    ddfs_p->set_offset_freq(300);
+    sleep_ms(150);
+    ddfs_p->set_offset_freq(335);
+    sleep_ms(250);
+    ddfs_p->set_offset_freq(125);
+    sleep_ms(250);
+    ddfs_p->set_offset_freq(0);
+    ddfs_p->set_env(0.0); // set volume
+}
+// external core instantiation
+GpoCore led(get_slot_addr(BRIDGE_BASE, S2_LED));
+GpiCore sw(get_slot_addr(BRIDGE_BASE, S3_SW));
+DdfsCore ddfs(get_slot_addr(BRIDGE_BASE, S12_DDFS));
+FrameCore frame(FRAME_BASE);
+GpvCore bar(get_sprite_addr(BRIDGE_BASE, V7_BAR));
+GpvCore gray(get_sprite_addr(BRIDGE_BASE, V6_GRAY));
+HangmanCore hangman(get_sprite_addr(BRIDGE_BASE, V5_USER5), 8192);
+SpriteCore ghost(get_sprite_addr(BRIDGE_BASE, V3_GHOST), 1024);
+SpriteCore mouse(get_sprite_addr(BRIDGE_BASE, V1_MOUSE), 1024);
+OsdCore osd(get_sprite_addr(BRIDGE_BASE, V2_OSD));
+SsegCore sseg(get_slot_addr(BRIDGE_BASE, S8_SSEG));
+Ps2Core ps2(get_slot_addr(BRIDGE_BASE, S11_PS2));
+
+int main()
+{
+    frame.bypass(0);
+    frame.clr_screen(0xfff);
+    ghost.bypass(1);
+    mouse.bypass(1);
+    gray.bypass(1);
+    bar.bypass(1);
+    char word[11] = {"microblaze"};
+    char outputList[11] = {"__________"};
+    char guesslist[26];
+
+    int lives = 8;
+    // ans length
+    int len = 10;
+    // input
+    char ch;
+    int hangman_count = 1;
+    int listcount = 0;
+    // counter
+    int counter = 10;
+    ghost.move_xy(320, 200); // Center i think.
+    ghost.wr_ctrl(0);
+    bool guessflag = false;
+    init_writing(&osd);
+
+    //init hangman
+    
+    hangman.bypass(0);
+    hangman.wr_ctrl(0x00);
+    hangman_p->move_xy(320, 200);
+    //hangman_check(&hangman);
+
+    // ans_display(&osd);
+
+    while (1)
+    {
+
+        ch = take_inputs(&ps2);
+        uart.disp("input = ");
+        uart.disp(ch);
+        // len =10
+        // i=0
+        for (int i = 0; i < len; i++) // Logic
+        {
+            //
+            for (int z = 0; z < listcount; z++)
+            {
+                if (guessflag == true)
+                    break;
+                else if (guesslist[z] == ch)
+                {
+                    guessflag = true;
+                    break;
+                }
+            }
+            // currect
+            if (word[i] == ch && guessflag == false)
+            {
+                outputList[i] = ch;
+                guesslist[listcount] = ch;
+                listcount++;
+                sound_correct(&ddfs);
+                uart.disp(" currect, lives = ");
+                uart.disp(lives);
+                uart.disp("\n\r");
+                counter--;
+                guessflag = true;
+                ans_display(&osd, i + 1);
+            }
+        }
+
+        // wrong
+        if (guessflag == false)
+        {
+            lives--;
+            sound_incorrect(&ddfs);
+            uart.disp(" wrong, lives = ");
+            uart.disp(lives);
+            uart.disp("\n\r");
+            hangman_count = (hangman_count % 8 ==0 )? 1: hangman_count+1;
+            hangman.wr_ctrl(hangman_count - 1);
+            wrong_writer(&osd,ch,lives);
+        }
+        guessflag = false;
+        if (counter == 0 || lives == 0)
+        {
+            uart.disp(" lives = ");
+            uart.disp(lives);
+            uart.disp("end game");
+            break;
+        }
+
+    } // while
+    if (counter == 0)
+    {
+        gray.bypass(0);
+        passed(&ddfs,&osd);
+    }
+    if (lives == 0){
+        gray.bypass(0);
+        failed(&ddfs, &osd);
+    }
+} // main

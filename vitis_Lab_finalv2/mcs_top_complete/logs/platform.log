@@ -1,0 +1,964 @@
+TRACE::2023-12-04.21:42:30::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:30::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:30::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened new HwDB with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2023-12-04.21:42:32::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete"
+		}]
+}
+TRACE::2023-12-04.21:42:32::SCWPlatform::Boot application domains not present, creating them
+TRACE::2023-12-04.21:42:32::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2023-12-04.21:42:32::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete"
+		}]
+}
+TRACE::2023-12-04.21:42:32::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete"
+		}]
+}
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:32::SCWDomain::checking for install qemu data   : 
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:32::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-12-04.21:42:32::SCWMssOS::No sw design opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::mss does not exists at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::Creating sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::Adding the swdes entry, created swdb C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss with des name C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::updating the scw layer changes to swdes at   C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::Writing mss at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::Completed writing the mss file at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp
+TRACE::2023-12-04.21:42:32::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2023-12-04.21:42:32::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:32::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss||
+
+TRACE::2023-12-04.21:42:32::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:32::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss||
+
+TRACE::2023-12-04.21:42:32::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:32::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss||
+
+TRACE::2023-12-04.21:42:32::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_I",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:32::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:32::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss||
+
+TRACE::2023-12-04.21:42:32::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:32::SCWMssOS::Completed writing the mss file at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp
+TRACE::2023-12-04.21:42:32::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2023-12-04.21:42:33::SCWPlatform::Started generating the artifacts platform mcs_top_complete
+TRACE::2023-12-04.21:42:33::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-12-04.21:42:33::SCWPlatform::Started generating the artifacts for system configuration mcs_top_complete
+LOG::2023-12-04.21:42:33::SCWSystem::Checking the domain standalone_domain
+LOG::2023-12-04.21:42:33::SCWSystem::Not a boot domain 
+LOG::2023-12-04.21:42:33::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2023-12-04.21:42:33::SCWDomain::Generating domain artifcats
+TRACE::2023-12-04.21:42:33::SCWMssOS::Generating standalone artifcats
+TRACE::2023-12-04.21:42:33::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss||
+
+KEYINFO::2023-12-04.21:42:33::SCWMssOS::Could not open the swdb for C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+KEYINFO::2023-12-04.21:42:33::SCWMssOS::Could not open the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss is not found
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Cleared the swdb table entry
+TRACE::2023-12-04.21:42:33::SCWMssOS::No sw design opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::mss exists loading the mss file  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::Opened the sw design from mss  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::Adding the swdes entry C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss with des name system
+TRACE::2023-12-04.21:42:33::SCWMssOS::updating the scw layer about changes
+TRACE::2023-12-04.21:42:33::SCWMssOS::Opened the sw design.  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::Completed writing the mss file at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp
+TRACE::2023-12-04.21:42:33::SCWMssOS::Mss edits present, copying mssfile into export location C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-12-04.21:42:33::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-12-04.21:42:33::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2023-12-04.21:42:33::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-12-04.21:42:33::SCWMssOS::Copying to export directory.
+TRACE::2023-12-04.21:42:33::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-12-04.21:42:33::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2023-12-04.21:42:33::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2023-12-04.21:42:33::SCWSystem::Completed Processing the sysconfig mcs_top_complete
+LOG::2023-12-04.21:42:33::SCWPlatform::Completed generating the artifacts for system configuration mcs_top_complete
+TRACE::2023-12-04.21:42:33::SCWPlatform::Started preparing the platform 
+TRACE::2023-12-04.21:42:33::SCWSystem::Writing the bif file for system config mcs_top_complete
+TRACE::2023-12-04.21:42:33::SCWSystem::dir created 
+TRACE::2023-12-04.21:42:33::SCWSystem::Writing the bif 
+TRACE::2023-12-04.21:42:33::SCWPlatform::Started writing the spfm file 
+TRACE::2023-12-04.21:42:33::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-12-04.21:42:33::SCWPlatform::Completed generating the platform
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_I",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"5980cf6cd247c6a3af06b1a36b27a03f",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-12-04.21:42:33::SCWPlatform::updated the xpfm file.
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_I",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"5980cf6cd247c6a3af06b1a36b27a03f",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:33::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:33::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:33::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:33::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_I",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"5980cf6cd247c6a3af06b1a36b27a03f",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-12-04.21:42:34::SCWPlatform::Started generating the artifacts platform mcs_top_complete
+TRACE::2023-12-04.21:42:34::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-12-04.21:42:34::SCWPlatform::Started generating the artifacts for system configuration mcs_top_complete
+LOG::2023-12-04.21:42:34::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2023-12-04.21:42:34::SCWDomain::Generating domain artifcats
+TRACE::2023-12-04.21:42:34::SCWMssOS::Generating standalone artifcats
+TRACE::2023-12-04.21:42:34::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:34::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:34::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWMssOS::Completed writing the mss file at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp
+TRACE::2023-12-04.21:42:34::SCWMssOS::Mss edits present, copying mssfile into export location C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-12-04.21:42:34::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-12-04.21:42:34::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2023-12-04.21:42:34::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-12-04.21:42:34::SCWMssOS::Copying to export directory.
+TRACE::2023-12-04.21:42:34::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-12-04.21:42:34::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2023-12-04.21:42:34::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2023-12-04.21:42:34::SCWSystem::Completed Processing the sysconfig mcs_top_complete
+LOG::2023-12-04.21:42:34::SCWPlatform::Completed generating the artifacts for system configuration mcs_top_complete
+TRACE::2023-12-04.21:42:34::SCWPlatform::Started preparing the platform 
+TRACE::2023-12-04.21:42:34::SCWSystem::Writing the bif file for system config mcs_top_complete
+TRACE::2023-12-04.21:42:34::SCWSystem::dir created 
+TRACE::2023-12-04.21:42:34::SCWSystem::Writing the bif 
+TRACE::2023-12-04.21:42:34::SCWPlatform::Started writing the spfm file 
+TRACE::2023-12-04.21:42:34::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-12-04.21:42:34::SCWPlatform::Completed generating the platform
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:34::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:34::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:34::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:34::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:42:34::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:42:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:42:34::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:42:34::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:42:34::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_I",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"5980cf6cd247c6a3af06b1a36b27a03f",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-12-04.21:42:34::SCWPlatform::updated the xpfm file.
+LOG::2023-12-04.21:45:22::SCWPlatform::Started generating the artifacts platform mcs_top_complete
+TRACE::2023-12-04.21:45:22::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-12-04.21:45:22::SCWPlatform::Started generating the artifacts for system configuration mcs_top_complete
+LOG::2023-12-04.21:45:22::SCWSystem::Checking the domain standalone_domain
+LOG::2023-12-04.21:45:22::SCWSystem::Not a boot domain 
+LOG::2023-12-04.21:45:22::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2023-12-04.21:45:22::SCWDomain::Generating domain artifcats
+TRACE::2023-12-04.21:45:22::SCWMssOS::Generating standalone artifcats
+TRACE::2023-12-04.21:45:22::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-12-04.21:45:22::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:22::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:22::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:22::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:45:22::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:22::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:45:22::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:45:22::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:45:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:45:22::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:22::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:45:22::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:22::SCWMssOS::Completed writing the mss file at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp
+TRACE::2023-12-04.21:45:22::SCWMssOS::Mss edits present, copying mssfile into export location C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:22::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-12-04.21:45:22::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-12-04.21:45:22::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2023-12-04.21:45:22::SCWMssOS::doing bsp build ... 
+TRACE::2023-12-04.21:45:22::SCWMssOS::System Command Ran  C: & cd  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp & make 
+TRACE::2023-12-04.21:45:22::SCWMssOS::"Running Make include in microblaze_I/libsrc/bram_v4_3/src"
+
+TRACE::2023-12-04.21:45:22::SCWMssOS::make -C microblaze_I/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2023-12-04.21:45:22::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
+TRACE::2023-12-04.21:45:22::SCWMssOS::-sections -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:22::SCWMssOS::"Running Make include in microblaze_I/libsrc/cpu_v2_10/src"
+
+TRACE::2023-12-04.21:45:22::SCWMssOS::make -C microblaze_I/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2023-12-04.21:45:22::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
+TRACE::2023-12-04.21:45:22::SCWMssOS::-sections -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:23::SCWMssOS::"Running Make include in microblaze_I/libsrc/iomodule_v2_7/src"
+
+TRACE::2023-12-04.21:45:23::SCWMssOS::make -C microblaze_I/libsrc/iomodule_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2023-12-04.21:45:23::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -f
+TRACE::2023-12-04.21:45:23::SCWMssOS::data-sections -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:23::SCWMssOS::"Running Make include in microblaze_I/libsrc/standalone_v7_1/src"
+
+TRACE::2023-12-04.21:45:23::SCWMssOS::make -C microblaze_I/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2023-12-04.21:45:23::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections 
+TRACE::2023-12-04.21:45:23::SCWMssOS::-fdata-sections -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:24::SCWMssOS::"Running Make libs in microblaze_I/libsrc/bram_v4_3/src"
+
+TRACE::2023-12-04.21:45:24::SCWMssOS::make -C microblaze_I/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2023-12-04.21:45:24::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
+TRACE::2023-12-04.21:45:24::SCWMssOS::ctions -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:24::SCWMssOS::"Compiling bram"
+
+TRACE::2023-12-04.21:45:25::SCWMssOS::"Running Make libs in microblaze_I/libsrc/cpu_v2_10/src"
+
+TRACE::2023-12-04.21:45:25::SCWMssOS::make -C microblaze_I/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2023-12-04.21:45:25::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
+TRACE::2023-12-04.21:45:25::SCWMssOS::ctions -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:25::SCWMssOS::"Compiling cpu"
+
+TRACE::2023-12-04.21:45:26::SCWMssOS::"Running Make libs in microblaze_I/libsrc/iomodule_v2_7/src"
+
+TRACE::2023-12-04.21:45:26::SCWMssOS::make -C microblaze_I/libsrc/iomodule_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2023-12-04.21:45:26::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdat
+TRACE::2023-12-04.21:45:26::SCWMssOS::a-sections -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:26::SCWMssOS::"Compiling iomodule"
+
+TRACE::2023-12-04.21:45:28::SCWMssOS::"Running Make libs in microblaze_I/libsrc/standalone_v7_1/src"
+
+TRACE::2023-12-04.21:45:28::SCWMssOS::make -C microblaze_I/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2023-12-04.21:45:28::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fd
+TRACE::2023-12-04.21:45:28::SCWMssOS::ata-sections -Wall -Wextra"
+
+TRACE::2023-12-04.21:45:28::SCWMssOS::"Compiling standalone";
+
+TRACE::2023-12-04.21:45:35::SCWMssOS::'Finished building libraries'
+
+TRACE::2023-12-04.21:45:35::SCWMssOS::Copying to export directory.
+TRACE::2023-12-04.21:45:35::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-12-04.21:45:35::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2023-12-04.21:45:35::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2023-12-04.21:45:35::SCWSystem::Completed Processing the sysconfig mcs_top_complete
+LOG::2023-12-04.21:45:35::SCWPlatform::Completed generating the artifacts for system configuration mcs_top_complete
+TRACE::2023-12-04.21:45:35::SCWPlatform::Started preparing the platform 
+TRACE::2023-12-04.21:45:35::SCWSystem::Writing the bif file for system config mcs_top_complete
+TRACE::2023-12-04.21:45:35::SCWSystem::dir created 
+TRACE::2023-12-04.21:45:35::SCWSystem::Writing the bif 
+TRACE::2023-12-04.21:45:35::SCWPlatform::Started writing the spfm file 
+TRACE::2023-12-04.21:45:35::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-12-04.21:45:35::SCWPlatform::Completed generating the platform
+TRACE::2023-12-04.21:45:35::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:45:35::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:45:35::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:35::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:45:35::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:35::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:45:35::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:45:35::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:35::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:45:35::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:35::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:45:35::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:35::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:45:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:45:35::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:35::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:45:35::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:35::SCWWriter::formatted JSON is {
+	"platformName":	"mcs_top_complete",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mcs_top_complete",
+	"platHandOff":	"C:/vitis_project/project_Lab_final/mcs_top_complete.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mcs_top_complete.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mcs_top_complete",
+	"systems":	[{
+			"systemName":	"mcs_top_complete",
+			"systemDesc":	"mcs_top_complete",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mcs_top_complete",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_I",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"5980cf6cd247c6a3af06b1a36b27a03f",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-12-04.21:45:35::SCWPlatform::updated the xpfm file.
+TRACE::2023-12-04.21:45:36::SCWPlatform::Trying to open the hw design at C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:36::SCWPlatform::DSA given C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:36::SCWPlatform::DSA absoulate path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:36::SCWPlatform::DSA directory C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw
+TRACE::2023-12-04.21:45:36::SCWPlatform:: Platform Path C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/hw/mcs_top_complete.xsa
+TRACE::2023-12-04.21:45:36::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2023-12-04.21:45:36::SCWPlatform::Trying to set the existing hwdb with name mcs_top_complete_0
+TRACE::2023-12-04.21:45:36::SCWPlatform::Opened existing hwdb mcs_top_complete_0
+TRACE::2023-12-04.21:45:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-12-04.21:45:36::SCWMssOS::Checking the sw design at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
+TRACE::2023-12-04.21:45:36::SCWMssOS::DEBUG:  swdes dump  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-12-04.21:45:36::SCWMssOS::Sw design exists and opened at  C:/vitis_project/vitis_Lab_finalv2/mcs_top_complete/microblaze_I/standalone_domain/bsp/system.mss
