@@ -1,4 +1,8 @@
 # hangman_game
 hanagman game on FPGA board
 
-project_lab_final is the HDL part
+# HDL:
+project_lab_final
+
+# application:
+vitis_Lab_finalv2
